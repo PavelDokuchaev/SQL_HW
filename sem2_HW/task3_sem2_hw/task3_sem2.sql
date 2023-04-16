@@ -18,11 +18,11 @@ amount INT NOT NULL
 
     SELECT orderid, employeeid, amount,
         CASE
-WHEN orderid = 1 THEN 'OPEN'
-WHEN orderid = 2 THEN 'OPEN'
-WHEN orderid = 3 THEN 'CLOSED'
-WHEN orderid = 4 THEN 'OPEN'
-WHEN orderid = 5 THEN 'CANCELLED'
-WHEN orderid = 6 THEN 'OPEN'
+    WHEN orderid = 1 THEN 'OPEN'
+    WHEN orderid = 2 THEN 'OPEN'
+    WHEN orderid = 3 THEN 'CLOSED'
+    WHEN orderid = 4 THEN 'OPEN'
+    WHEN orderid = 5 THEN 'CANCELLED'
+    WHEN orderid = 6 THEN 'OPEN'
 END AS orderstatus
     FROM orders;
